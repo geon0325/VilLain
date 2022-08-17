@@ -1,0 +1,1 @@
+python main.py --dataset cora --num_step 4 --gen_step 10 --dim 128 --learning_rate 0.01
