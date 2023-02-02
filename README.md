@@ -8,12 +8,14 @@ Source code for the submitted paper [VilLain: Hypergraph Embedding with No Label
 * Datasets used in the paper is in [data](data).
 * Input file is the hypergraph which is in the form:
 
-	# A pair (V_idx, E_idx) of PyTorch tensors lengthed (# nonzero elements of the incidence matrix)
-	# Node V_idx[i] is contained in hyperedge E_idx[i].
+'''
+A pair (V_idx, E_idx) of PyTorch tensors lengthed (# nonzero elements of the incidence matrix)
+Node V_idx[i] is contained in hyperedge E_idx[i].
 
-	# e.g.,
-	# [tensor([     0,      1,      2,  ...,  80632,   5121, 260208]),
- 	#  tensor([    0,     0,     0,  ..., 31963, 31963, 31963])]
+e.g.,
+[tensor([     0,      1,      2,  ...,  80632,   5121, 260208]),
+ tensor([    0,     0,     0,  ..., 31963, 31963, 31963])]
+'''
 
 ## How to Run
 * To run demos, execute following commend in [code](code):
