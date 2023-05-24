@@ -27,15 +27,15 @@ dim:            embedding dimension (default: 128)
 lr:             learning rate (default: 0.01)
 num_step:       number of propagation steps for training, i.e., k in the paper (default: 4)
 num_step_gen:   number of propagation steps for inference, i.e., k' in the paper (default: 10 or 100)
-pca:            explained variance ratio for PCA (default: 0.99)
+nl:             number of v-labels in each subspace, i.e., d/D (default: 2)
 ```
 
 * To run with specified hyperparameters, execute following commends in [code](code):
 ```
-python main.py --dataset [DATASET NAME] --dim [DIMENSION] --lr [LEARNING RATE] --num_step [# PROPAGATION STEP (TRAINING)] --num_step_gen [# PROPAGATION STEP (INFERENCE)] --pca [eplained variance ratio]
+python main.py --dataset [DATASET NAME] --dim [DIMENSION] --lr [LEARNING RATE] --num_step [# PROPAGATION STEP (TRAINING)] --num_step_gen [# PROPAGATION STEP (INFERENCE)] 
 
 e.g.,
-python main.py --dataset cora --dim 128 --lr 0.01 --num_step 4 --num_step_gen 10 --pca 0.99
+python main.py --dataset cora --dim 128 --lr 0.01 --num_step 4 --num_step_gen 10 --nl 2
 ```
 
 * Embeddings will be saved in [code/embs](code/embs) as a PyTorch tensor:
