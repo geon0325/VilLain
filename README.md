@@ -34,7 +34,7 @@ num_step_gen:   number of propagation steps for inference, i.e., k' in the paper
 nl:             number of v-labels in each subspace, i.e., d/D (default: 2)
 ```
 
-* To run with specified hyperparameters, execute the following command in [code](code):
+* To run with specified hyperparameters, execute [main.py](code/main.py):
 ```
 python main.py --gpu [GPU ID] --dataset [DATASET NAME] --num_step [# PROPAGATION STEP (TRAINING)] --num_step_gen [# PROPAGATION STEP (INFERENCE)] --lr [LEARNING RATE] --num_labels [NUMBER OF LABELS] --dim [DIMENSION]
 
@@ -42,7 +42,7 @@ e.g.,
 python main.py --gpu 0 --dataset cora --num_step 4 --num_step_gen 100 --lr 0.01 --num_labels 2 --dim 128
 ```
 
-* To aggregate the embeddings learned with different numbers of v-labels, execute the following command in [code](code):
+* To aggregate the embeddings learned with different numbers of v-labels, execute [emb_concat.py](code/emb_concat.py):
 ```
 python emb_concat.py --dataset [DATASET NAME] --num_step [# PROPAGATION STEP (TRAINING)] --num_step_gen [# PROPAGATION STEP (INFERENCE)] --dim [DIMENSION]
 
