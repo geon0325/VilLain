@@ -1,8 +1,8 @@
 # VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation
 Source code for the paper **VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation**, Geon Lee, Soo Yong Lee, and Kijung Shin, WWW 2024.
 
-## Overview
-Group interactions arise in various scenarios in real-world systems: collaborations of researchers, co-purchases of products, and discussions in online Q&A sites, to name a few. Such higher-order relations are naturally modeled as hypergraphs, which consist of hyperedges (i.e., any-sized subsets of nodes). For hypergraphs, the challenge to learn node representation when features or labels are not available is imminent, given that (a) most real-world hypergraphs are not equipped with external features while (b) most existing approaches for hypergraph learning resort to additional information. Thus, in this work, we propose VilLain, a novel self-supervised hypergraph representation learning method based on the propagation of virtual labels (v-labels). Specifically, we learn for each node a sparse probability distribution over v-labels as its feature vector, and we propagate the vectors to construct the final node embeddings. Inspired by higher-order label homogeneity, which we discover in real-world hypergraphs, we design novel self-supervised loss functions for the v-labels to reproduce the higher-order structure-label pattern.  We demonstrate that VilLain is: (a) Requirement-free: learning node embeddings without relying on node labels and features, (b) Versatile: giving embeddings that are not specialized to specific tasks but generalizable to diverse downstream tasks, and (c) Accurate: more accurate than its competitors for node classification, hyperedge prediction, node clustering, and node retrieval tasks. 
+* Paper: [PDF](http://dmlab.kaist.ac.kr/~kijungs/papers/villainWWW2024.pdf)
+* Poster: [PDF](http://dmlab.kaist.ac.kr/~kijungs/posters/villainWWW2024.pdf)
 
 ## Datasets
 * Datasets used in the paper (Amazon, Trivago, Cora, Citeseer, Pubmed, DBLP, Primary, and High) are in [data](data).
